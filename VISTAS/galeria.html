@@ -19,7 +19,6 @@
             </ul>
         </nav>
     </header>
-
     <main>
         <section id="galeria">
             <h2>Categorías</h2>
@@ -37,7 +36,7 @@
                     <li><a href="#ArteRenacentista">Arte Renacentista</a></li>
                 </ul>
             </nav>
-       </section>
+        </section>
         <section id="ArteEmergente">
             <h3>Arte Emergente</h3>
             <div class="imagen-container">
@@ -128,6 +127,15 @@
         <p>Contacto: galeria@galeriadearte.com</p>
         <p>&copy; 2024 Galería de Arte</p>
     </footer>
+    <button onclick="scrollToTop()" id="btnVolverArriba">Volver arriba</button>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
 </body>
 </html>
 

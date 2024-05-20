@@ -7,14 +7,14 @@ body {
 header {
     background-color: #f2f2f2;
     padding: 20px;
-    text-align: center; 
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    text-align: center; 
+    text-align: center;
 }
 
 nav ul li {
@@ -33,35 +33,78 @@ main {
 }
 
 section {
-    flex: 0 0 calc(30% - 10px); /* Ajustar el ancho de las secciones */
     margin: 5px;
     padding: 5px;
     border: 1px solid #ddd;
     text-align: center;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-section h4 {
+section h4, section h5, section h6 {
     margin-bottom: 5px;
 }
 
 section ul {
     list-style: none;
-    margin-top: 5px;
+    margin: 5px 0;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .imagen-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
-.imagen-container img {
-    max-width: 100%;
+.imagen-container img, section ul li img {
+    width: calc(50% - 10px); /* Ajustamos el ancho de las imágenes */
     height: auto;
     margin: 5px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .imagen-container img, section ul li img {
+        width: calc(100% - 10px); /* Ajustamos el ancho de las imágenes para pantallas pequeñas */
+    }
+}
+
+@media (max-width: 320px) {
+    .imagen-container img, section ul li img {
+        width: 100%; /* Las imágenes ocupan el 100% del ancho del contenedor en pantallas muy pequeñas */
+        margin: 0; /* Eliminamos el margen para evitar cualquier desbordamiento */
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+        margin: 5px 0;
+    }
 }
 
 footer {

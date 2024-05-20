@@ -2,18 +2,18 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  text-align: center; 
 }
 
 header {
   background-color: #f2f2f2;
-  padding: 5px;
+  padding: 20px;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  text-align: center; 
 }
 
 nav ul li {
@@ -28,98 +28,68 @@ nav ul li a {
 }
 
 main {
-  padding: 2%;
+  padding: 5%;
 }
 
-  
-  /* Estilos para el ""carrusel"" */
-  #carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: auto;
-    overflow-y: hidden;
-    width: 100%;
-    max-height: 300px;
-  }
-  
-  #carousel figure {
-    margin: 5px;
-    max-width: 200px; 
-    max-height: 200px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  #carousel img {
-    max-height: 100%; 
-    object-fit: contain;
-  }
-  
- 
-  #NuevasObras {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  #NuevasObras figure {
-    margin: 5px;
-    max-width: 200px; 
-    max-height: 200px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  #NuevasObras img {
-    max-height: 100%; 
-    object-fit: contain;
-  }
-  
+/* Estilos para el "carrusel" */
+#carousel {
+  overflow-x: auto;
+  width: auto;
+  max-height: auto;
+  display: flex;
+  justify-content: center;
+}
 
-  #figure img {
-    max-height: 100%; 
-    margin: 10px; 
-    padding: 10px;
-    width: auto; 
-    height: auto; 
-  }
-  
+.carousel-container {
+  display: inline-block;
+  flex-wrap: nowrap;
+}
 
-  #imagenes figcaption {
-    text-align: center;
-  }
+#carousel .imagenes {
+  margin-right: 0.5em;
+  flex: 0 0 auto;
+  max-height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 2%;
+#carousel img {
+  width: auto;
+  height: auto;
+  max-height: auto; /* Altura máxima del carrusel */
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#carousel figcaption {
+  text-align: center;
+  background: none;
+  background-color: transparent;
+  padding: 5px;
+}
+
+#Bienvenida p {
+  font-family: 'Roboto', sans-serif;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  #carousel .imagenes {
+      max-width: calc(50% - 10px);
   }
-  
-  
-  @media screen and (max-width: 800px) {
-    #carousel {
-      height: 150px; 
-    }
-  
-    #NuevasObras figure {
-      width: calc(50% - 5px);
-    }
+}
+
+@media screen and (max-width: 320px) {
+  #carousel .imagenes {
+      max-width: calc(100% - 10px);
   }
-  
-  @media screen and (max-width: 320px) {
-    #carousel {
-      height: 50px; 
-    }
-  
-    #NuevasObras figure {
-      width: 100%; 
-    }
-  }
+}
+
   

@@ -113,3 +113,19 @@ footer {
     text-align: center;
     padding: 20px;
 }
+#btnVolverArriba {
+    position: fixed; /* Hace que el botón sea fijo en la pantalla */
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 999; 
+}
+
+#btnVolverArriba:hover {
+    background-color: #0056b3;
+}

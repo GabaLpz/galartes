@@ -7,9 +7,23 @@ body {
 
 header {
     background-color: #f2f2f2;
-    padding: 20px;
+  padding: 20px;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 20px
 }
 
+h1 a{
+    font-family:"sofia",sans-serif;
+  color: #000000;
+  font-size: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  color: #131313;
+  background-color: #f2f2f2;
+  letter-spacing: 0.15em;
+}
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -18,13 +32,15 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+  margin-right: 20px;
+  border-style: outset;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+  color: #333;
+  font-weight: bold;
+  padding: .5%;
 }
 
 main {
@@ -85,7 +101,9 @@ section {
 
 footer {
     background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-style: solid;
+  border-color: #000000;
 }
